@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.css";
 import Item from "./item";
+import "./style.scss";
 
 function CaseStudy() {
   return (

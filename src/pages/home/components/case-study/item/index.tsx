@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 
 import customerImg from "../../../../../assets/images/customer.png";
 

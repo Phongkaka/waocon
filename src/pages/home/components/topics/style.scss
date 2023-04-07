@@ -1,0 +1,69 @@
+/* Topics */
+.topics {
+	display: flex;
+	margin: 111px 84px;
+	h2 {
+		line-height: 80px;
+		font-size: 80px;
+		padding-bottom: 5px;
+		font-weight: 100;
+		color: #1F3655;
+	}
+	.left-topics {
+		display: block;
+		margin-right: 142px;
+		font-size: 22px;
+		line-height: 28px;
+		color: #15285850;
+		margin-top: 40px;
+	}
+}
+.right-topics {
+	ul {
+		li {
+			margin-bottom: 32px;
+		}
+	}
+	.topic-item {
+		display: flex;
+		.date-topic {
+			display: block;
+			width: 113px;
+			font-size: 17px;
+			color: #878787;
+		}
+		p {
+			width: 659px;
+			margin-left: 23px;
+			line-height: 22px;
+			font-size: 17px;
+			color: #646464;
+		}
+		button {
+			width: 117px;
+			height: 23px;
+			background: transparent;
+			border: 1px solid #3B4F69;
+			font-size: 14px;
+			color: #51637A;
+		}
+	}
+	.load-more {
+		display: block;
+		margin-top: 40px;
+		padding-bottom: 5px;
+		font-size: 17px;
+		color: #787878;
+		position: relative;
+		&::after {
+			content: '';
+			display: block;
+			width: 92px;
+			height: 1px;
+			background: #787878;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+}

@@ -6,7 +6,7 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import CaseStudy from "./components/case-study";
 
-import "./style.css";
+import "./style.scss";
 
 function Home() {
   return (

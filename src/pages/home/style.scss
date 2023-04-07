@@ -1,0 +1,151 @@
+
+/*--------------------------------------------------------------
+  The Complete CSS Style sheet
+---------------------------------------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  -ms-overflow-style:none;
+}
+
+body {
+  height: 100%;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:hover, a:active, a:focus {
+outline: 0;
+text-decoration: none;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/*--------------------------------------------------------------
+  The Complete CSS Style sheet 
+---------------------------------------------------------------*/
+
+/* dashboard-page */
+/* main content */
+.dashboard-page {
+	position: relative;
+}
+.main-content {
+	.same-item {
+		margin-bottom: 113px;
+	}
+	.same-bg {
+		display: flex;
+		width: 1160px;
+		height: 546px;
+		align-items: center;
+		position: relative;
+		.box-content {
+			width: 504px;
+			height: 355px;
+			padding-top: 85px;
+			padding-left: 94px;
+			background-color: #fff;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+			position: absolute;
+			right: -80px;
+			h2 {
+				padding-bottom: 29px;
+				font-size: 45px;
+				color: #142C4B;
+			}
+			p {
+				line-height: 18px;
+				width: 306px;
+				font-size: 15px;
+				color: #464646;
+			}
+			&::before {
+				content: '';
+				display: block;
+				width: 50px;
+				height: 355px;
+				background-color: #fff;
+				position: absolute;
+				right: -50px;
+				top: 0;
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+			}
+		}
+	}
+	.same-bg.bg-system {
+		background-image: url(../../assets/images/rectangle-system.png);
+	}
+	.same-bg.bg-security {
+		background-image: url(../../assets/images/rectangle-security.png);
+	}
+	.right-item {
+		display: flex;
+		justify-content: flex-end;
+		.box-content {
+			right: unset;
+			left: -186px;
+		}
+	}
+	.same-bg.bg-support {
+		background-image: url(../../assets/images/rectangle-support.png);
+	}
+}
+
