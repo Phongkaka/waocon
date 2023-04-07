@@ -1,6 +1,11 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Item from "./item";
+import "swiper/css";
+import "swiper/css/pagination";
 import "./style.scss";
+
+import { Pagination } from "swiper";
 
 function CaseStudy() {
   return (
@@ -18,7 +23,33 @@ function CaseStudy() {
           </span>
         </div>
         <div className="slider">
-          <Item />
+          <Swiper
+            slidesPerView={2}
+            spaceBetween={30}
+            centeredSlides={true}
+            pagination={{
+              clickable: true,
+            }}
+            loop={true}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <Item />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Item />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Item />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Item />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Item />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <button className="btn-action">導入実績</button>
       </div>
