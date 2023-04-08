@@ -69,6 +69,14 @@
 
 .slider {
   width: 100%;
+  .swiper {
+    overflow: unset;
+    position: relative;
+    .swiper-pagination {
+      bottom: -42px;
+    }
+  }
+
   .swiper-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
